@@ -1,0 +1,457 @@
+.main {
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.manage-user {
+    padding: 40px 0px 7px 15px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+
+}
+
+.doclist {
+    padding: 30px 0px 20px 5px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-striped-bg: #ffffff !important;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.table-light {
+    --bs-table-bg: #cccccc !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: var(--bs-table-striped-color);
+}
+
+table.table tbody tr td,
+table.table thead tr th,
+table.table thead {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+
+.table>thead {
+    border-top: 2px solid black;
+}
+
+.table>tbody {
+    border-bottom: 2px solid black;
+}
+
+.nav {
+    margin: 0px 7px 0px 14px;
+}
+
+.pointer {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.disabled {
+    color: #cccccc;
+    cursor: default;
+}
+
+.nav-justified .nav-link {
+    color: black;
+    background-color: #bfbfbf;
+    border: 2px solid;
+    height: 100%;
+    width: 100%;
+    margin-left: -10px;
+    padding-bottom: 18px;
+    font-size: 16px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: black;
+    background-color: #ffffff;
+}
+
+
+.button {
+    border-radius: 12px;
+    width: 210px;
+    background-color: #66ffff;
+    color: #181818;
+    font-weight: bold;
+}
+
+.buttonGroupChat {
+    border-radius: 12px;
+    width: 80px;
+    background-color: #ffffff;
+    color: #181818;
+    font-weight: bold;
+}
+
+.uploadButton {
+    border-radius: 12px;
+    height: 35px;
+    width: 210px;
+    background-color: #66ffff;
+    color: #181818;
+    font-weight: bold;
+    margin-left: -5px;
+    margin-bottom: -5px;
+}
+
+input {
+    border-radius: 7px;
+    border-width: 2px;
+    width: 275px;
+    justify-content: center;
+    align-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.upload-file {
+    margin-left: 60px;
+    width: 360px;
+    font-weight: bold;
+    display: inline;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    text-align: center;
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 200px;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+}
+
+/* Modal Content */
+.modal-content {
+    text-align: center;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 2px;
+    border: 2px solid black;
+    width: 18%;
+    border-radius: 5px;
+}
+
+.add-modal-content {
+    text-align: center;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 2px;
+    border: 2px solid black;
+    width: 30%;
+    border-radius: 5px;
+}
+
+
+.edit-modal-content {
+    text-align: center;
+    background-color: #ffffff;
+    margin: auto;
+    height: 220px;
+    padding: 2px;
+    border: 2px solid black;
+    width: 30%;
+    border-radius: 5px;
+}
+
+/* The Close Button */
+.close {
+    color: #000;
+    float: right;
+    font-weight: bolder;
+    border: 2px solid;
+    font-size: 25px;
+    height: 25px;
+    margin-top: 0px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=file]::file-selector-button {
+    border-radius: 12px;
+    padding: .2em .4em;
+    border-radius: 8px;
+    background-color: #b3b3b3;
+    margin-right: 60px;
+
+    transition: 1s;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Some browsers will not display the caret when using calc, so we put the fallback first */
+    background: url("../../assets/images/arrow-down.png");
+    background-repeat: no-repeat;
+    background-size: 26px 26px;
+    background-position: 467px !important;
+}
+
+/*For IE*/
+select::-ms-expand {
+    display: none;
+}
+
+.custom-container {
+    margin: 3px;
+}
+
+.custom-th-label {
+    width: 40%;
+    font-weight: normal;
+}
+
+.custom-th-filename {
+    width: 40%;
+    font-weight: normal;
+    text-align: center;
+}
+
+.custom-th-action {
+    width: 20%;
+    font-weight: normal;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.modal-title {
+    border-bottom: 2px solid;
+    margin: -3px;
+    padding: 2px
+}
+
+.close-img {
+    height: 25px;
+    width: 25px
+}
+
+.modal-p {
+    margin: 40px 0px
+}
+
+.modal-input {
+    margin-left: 30px;
+    width: 360px;
+    border-color: black;
+}
+
+.custom-span {
+    margin-left: -250px;
+}
+
+.modal-button-save {
+    margin-bottom: 20px;
+    margin-right: 25px;
+    border-radius: 10px;
+    width: 130px;
+    background-color: #b3b3b3;
+}
+
+.modal-button-cancel {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 125px;
+    background-color: #b3b3b3;
+}
+
+.modal-del-btn-save {
+    margin-bottom: 20px;
+    border-color: #00f;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 100px
+}
+
+.modal-del-btn-cancel {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 125px;
+}
+
+.span-spacing {
+    margin: 0px 0px 50px 70px;
+}
+
+.question-logo {
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin: 30px 0px -30px 30px
+}
+
+.edit-header {
+    margin-bottom: 60px
+}
+
+.col-edit-1 {
+    margin-left: 150px;
+    text-align: right;
+}
+
+.col-edit-2 {
+    margin-left: -300px;
+    text-align: right;
+}
+
+.small {
+    float: right
+}
+
+.container-grp-chat {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 119rem;
+    height: 646px;
+    margin: 20px 7px 0px 7px;
+    position: absolute;
+}
+
+.grp-title {
+    text-align: center;
+    border-bottom: 2px solid;
+    margin: -2px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.grp-box {
+    margin: 30px;
+    font-size: 24;
+    color: black;
+}
+
+.grp-p {
+    margin: 5px 5px 3px 15px
+}
+
+.space-10px {
+    padding-right: 7px;
+}
+
+.scroll {
+    border-top: 2px solid;
+    background-color: #ffffff;
+    height: 541px;
+    width: auto;
+    overflow-y: auto;
+}
+
+.grp-footer {
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 70px;
+    margin: 0px -2px -2px -2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+.grp-container-chat-box {
+    margin: 18px 16px 0 15px;
+    text-align: center;
+}
+
+.grp-input-chat {
+    width: 1450px;
+    height: 33px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-color: black;
+}
+
+.custom-th-50 {
+    width: 50%;
+    font-weight: normal
+}
+
+.container-add-sharing {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: auto;
+    height: 70px;
+    margin: -20px 3px 0px 3px;
+}
+
+.container-p {
+    margin: 18px 16px 0 55px;
+    text-align: left;
+}
+
+.input-select {
+    width: 500px;
+    text-align: center;
+    height: 34px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+
+.custom-btn {
+    margin-left: 35px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 125px;
+    background-color: #b3b3b3;
+    color: black;
+}
+
+.custom-btn-share {
+    margin-bottom: 20px;
+    border-color: #00f;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 100px
+}
+
+.custom-btn-plain {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 125px
+}
