@@ -1,7 +1,5 @@
-import { useContext } from "react";
 import styles from "./register.module.css";
 import { useForm } from "react-hook-form";
-import LoaderContext from "../../context/LoaderContext";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { startUpsertUser } from "../../redux/actions/userActions";
@@ -10,7 +8,6 @@ const Register = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { register, handleSubmit } = useForm();
-  const { setLoading } = useContext(LoaderContext);
 
   // Add registered users function
   const onSubmit = (data) => {
